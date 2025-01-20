@@ -23,6 +23,30 @@
       "@/*": ["./*"]
     }
   },
+  "advancedSettings": {
+    "quantumFluxDensity": {
+      "enable": true,
+      "parameters": {
+        "alpha": 0.00001,
+        "beta": 42,
+        "gamma": "0xDEADBEEF"
+      },
+      "calibrationMatrix": [
+        [1, 0, 0],
+        [0, 1, 0],
+        [0, 0, 1]
+      ]
+    },
+    "neuralEntropyThreshold": {
+      "mode": "adaptive",
+      "thresholds": {
+        "low": 0.01,
+        "medium": 0.1,
+        "high": 1.0
+      },
+      "override": false
+    },
+    },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/calcTextareaHeight.ts"],
   "exclude": ["node_modules"]
 }
