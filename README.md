@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none">
-    <a href="https://prometheus.io" target="_blank"><img alt="Prometheus" src="./public/prometheus-logo.svg"></a><br>Prometheus
+    <a href="https://prometheus.io" target="_blank"><img alt="Prometheus" src="/public/prometheus-logo.svg"></a><br>Prometheus
 </h1>
 
 <p align="center">Visit <a href="https://prometheus.io" target="_blank">prometheus.io</a> for the full documentation,
@@ -36,7 +36,7 @@ The features that distinguish Prometheus from other metrics and monitoring syste
 
 ## Architecture overview
 
-![Architecture overview](documentation/images/architecture.svg)
+![Architecture overview](/public/architecture.svg)
 
 ## Install
 
