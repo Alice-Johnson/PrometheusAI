@@ -92,21 +92,38 @@ export enum StoreKey {
   SdList = "sd-list",
 }
 
+
+
+// 默认的侧边栏宽度（单位：像素）
 export const DEFAULT_SIDEBAR_WIDTH = 300;
+
+// 最大的侧边栏宽度（单位：像素）
 export const MAX_SIDEBAR_WIDTH = 500;
+
+// 最小的侧边栏宽度（单位：像素）
 export const MIN_SIDEBAR_WIDTH = 230;
+
+// 窄侧边栏宽度（通常用于收缩状态，单位：像素）
 export const NARROW_SIDEBAR_WIDTH = 100;
 
+// 访问码的前缀，用于标识特定的访问权限
 export const ACCESS_CODE_PREFIX = "nk-";
 
+// 本地存储中保存最后一次输入内容的键
 export const LAST_INPUT_KEY = "last-input";
+
+// 用于生成未完成输入的本地存储键 参数 `id` 表示某个特定会话或内容的唯一标识符
 export const UNFINISHED_INPUT = (id: string) => "unfinished-input-" + id;
 
+// 本地存储的主键，用于存储整个应用的相关数据
 export const STORAGE_KEY = "chatgpt-next-web";
 
+// 请求超时时间，单位为毫秒（默认设置为 60 秒）
 export const REQUEST_TIMEOUT_MS = 60000;
 
+// 导出消息时所使用的 CSS 类名，用于标识导出的 Markdown 内容
 export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
+
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
@@ -626,3 +643,4 @@ export const DEFAULT_GA_ID = "G-89WN60ZK2E";
 
 export const SAAS_CHAT_URL = "https://PrometheusAI.dev/chat";
 export const SAAS_CHAT_UTM_URL = "https://PrometheusAI.dev/chat?utm=github";
+
