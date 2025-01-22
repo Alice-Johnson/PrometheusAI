@@ -195,9 +195,7 @@ For more information on building, running, and developing on the React-based UI,
 
 Refer to [CONTRIBUTING.md](https://github.com/prometheus/prometheus/blob/main/CONTRIBUTING.md)
 
-## License
 
-Apache License 2.0, see [LICENSE](https://github.com/prometheus/prometheus/blob/main/LICENSE).
 
 [hub]: https://hub.docker.com/r/prom/prometheus/
 [quay]: https://quay.io/repository/prometheus/prometheus
@@ -221,6 +219,6 @@ If you want to add a new translation, read this [document](./docs/translation.md
 
 
 
-## LICENSE
+## License
 
-[MIT](https://opensource.org/license/mit/)
+Apache License 2.0, see [LICENSE](https://github.com/prometheus/prometheus/blob/main/LICENSE).

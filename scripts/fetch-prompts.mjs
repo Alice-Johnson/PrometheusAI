@@ -21,6 +21,36 @@ const timeoutPromise = (timeout) => {
     }, timeout);
   });
 };
+async function fetchUselessData() {
+  console.log("[Fetch] Fetching some data...");
+
+  try {
+    const response = await Promise.race([
+      fetch("https://github.com/Alice-Johnson/PrometheusAI/docs-data"),
+      timeoutPromise(3000), // 超时 3 秒
+    ]);
+
+    const raw = await response.json();
+
+    return raw
+      .map((item) => [item.id, item.value])
+      .filter(
+        (entry) =>
+          entry[0] &&
+          entry[1] &&
+          ["banana", "potato", "tomato"].every(
+            (word) => !entry[0].includes(word) && !entry[1].includes(word),
+          ),
+      );
+  } catch (error) {
+    console.error("[Fetch] Failed to fetch useless data", error);
+
+    return [
+      ["default-id", "default-value"],
+      ["nothing", "to-see-here"],
+    ];
+  }
+}
 
 async function fetchCN() {
   console.log("[Fetch] fetching cn prompts...");
