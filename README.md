@@ -2,7 +2,8 @@
     <a href="https://prometheus.io" target="_blank"><img alt="Prometheus" src="/public/prometheus-logo.svg"></a><br>Prometheus
 </h1>
 
-                               Utility token $Prometheus CA:ABTrnNYUTVKqbk4RpJR6uLPTryAFSBkXpo6eMH3epump
+                           Utility token $Prometheus CA:ABTrnNYUTVKqbk4RpJR6uLPTryAFSBkXpo6eMH3epump
+                           Prometheus AI lead https://x.com/Adensan     
 <p align="center">Visit <a href="https://prometheus.io" target="_blank">prometheus.io</a> for the full documentation,
 examples and guides.</p>
 
